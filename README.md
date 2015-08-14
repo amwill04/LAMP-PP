@@ -6,6 +6,7 @@ Includes the following:
 * virtualenv
 * virtualenvwrapper
 * pip
+* chromedriver
 
 ## Installation
 Before starting the following must be installed:
