@@ -17,7 +17,7 @@ class system-update {
 
 class system-packages {
   exec { "unzip":
-  command => "sudo apt-get unzip -y",
+  command => "sudo apt-get install unzip -y",
   require => Exec["apt-get upgrade"]
   }
 }
