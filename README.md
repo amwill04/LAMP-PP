@@ -7,6 +7,7 @@ Includes the following:
 * virtualenvwrapper
 * pip
 * chromedriver
+* mysql-python.connector
 
 ## Requirements
 Before starting the following must be installed:
