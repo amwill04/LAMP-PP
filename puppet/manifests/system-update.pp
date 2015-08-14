@@ -14,3 +14,10 @@ class system-update {
   require => Exec['apt-get update'],
   }
 }
+
+class system-packages {
+  exec { "unzip":
+  command => "sudo apt-get unzip -y",
+  require => Exec["apt-get upgrade"]
+  }
+}

@@ -7,3 +7,4 @@ import "mysql.pp"
 include mysql
 include pip
 include system-update
+include system-packages
