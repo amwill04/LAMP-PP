@@ -21,3 +21,16 @@ class system-packages {
   require => Exec["apt-get upgrade"]
   }
 }
+
+class profile-update {
+  file { "/home/vagrant/profile.sh":
+  ensure => present,
+  mode => "0755",
+  source => "puppet:///modules/system-update/profile.sh",
+  }
+
+  exec { "profile":
+  command => "sudo sh /home/vagrant/profile.sh",
+  require => File["/home/vagrant/profile.sh"]
+  }
+}

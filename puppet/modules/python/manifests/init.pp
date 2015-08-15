@@ -1,4 +1,4 @@
-class pip {
+class python {
   package {["python-dev", "python-pip"]:
   ensure => ["installed"],
   require => Exec ['apt-get upgrade']
