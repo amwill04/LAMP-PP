@@ -6,6 +6,7 @@ Includes the following:
 * virtualenv
 * virtualenvwrapper
 * pip
+* chrome
 * chromedriver
 * mysql-python.connector
 
