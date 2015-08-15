@@ -1,5 +1,5 @@
 # vagrant-python
-ubuntu box for python development
+ubuntu box for python development with a focus on web scraping
 
 Includes the following:
 * ubuntu/trusty64
