@@ -14,5 +14,11 @@ class chrome {
   file {"/home/vagrant/chrome.sh":
   ensure => present,
   mode => "0755",
-  source => "puppet:///modules/chrome/chrome.sh"}
+  source => "puppet:///modules/chrome/chrome.sh"
+  }
+
+  exec {"install chrome":
+  command => "sudo sh /home/vagrant/chrome.sh",
+  require => File["/home/vagrant/chrome.sh"]
+  }
 }
