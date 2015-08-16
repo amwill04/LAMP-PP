@@ -4,7 +4,7 @@ class system-update {
   }
 
   $sysPackages = [ "build-essential" ]
-  package { $sysPackages:
+    package { $sysPackages:
     ensure => "installed",
     require => Exec['apt-get update'],
   }

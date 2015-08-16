@@ -1,5 +1,18 @@
 class mysql {
-  exec { 'apt-get mysql-connector':
+
+  package {
+  ["mysql-server", "libapache2-mod-auth-mysql", "php5-mysql"]:
+  ensure => "installed",
+  require => Exec['apt-get update'],
+  }
+
+  service { "mysql":
+  ensure    => running,
+  enable    => true,
+  require => Package["mysql-server"],
+  }
+
+  exec { 'sudo apt-get mysql-connector':
   command => "sudo apt-get install python-mysql.connector -y",
   require => Exec['apt-get upgrade']
   }

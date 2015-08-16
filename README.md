@@ -9,6 +9,7 @@ Includes the following:
 * chrome
 * chromedriver
 * mysql-python.connector
+* mysql
 
 ## Requirements
 Before starting the following must be installed:

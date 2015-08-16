@@ -25,7 +25,8 @@ class python {
   exec {
     "numpy" :
     command => "sudo pip install numpy",
-    require => Package ["python-dev", "python-pip"]
+    require => Package ["python-dev", "python-pip"],
+    timeout => 0
   }
 
   exec {
