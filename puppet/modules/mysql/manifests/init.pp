@@ -3,13 +3,13 @@ class mysql {
   package {
   ["mysql-server", "libapache2-mod-auth-mysql", "php5-mysql"]:
   ensure => "installed",
-  require => Exec['apt-get update'],
+  require => Exec['apt-get update']
   }
 
   service { "mysql":
   ensure    => running,
   enable    => true,
-  require => Package["mysql-server"],
+  require => Package["mysql-server"]
   }
 
   exec { 'sudo apt-get mysql-connector':

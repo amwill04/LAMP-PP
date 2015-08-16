@@ -1,15 +1,21 @@
 # vagrant-python
-ubuntu box for python development with a focus on web scraping
+This box has become more of an experiment and learning tool for me to understand provisioning with puppet.
+For that reason you will find LAMP boxes that are available straight out the box, scotch/box being an excellent one.
+However they removed puppet from scotch 2.0 so I therefore decided to experiment with building the whole stack.
+This ubuntu box has a focus on web scraping and providing a web app.
 
 Includes the following:
 * ubuntu/trusty64
+* pip
+* git
 * virtualenv
 * virtualenvwrapper
-* pip
+* xvfb
 * chrome
 * chromedriver
 * mysql-python.connector
 * mysql
+* phantomjs
 
 ## Requirements
 Before starting the following must be installed:
