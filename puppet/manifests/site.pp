@@ -11,3 +11,4 @@ include git
 include phantomjs
 include install-phantomjs
 include apache
+include php
