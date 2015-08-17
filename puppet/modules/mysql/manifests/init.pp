@@ -3,7 +3,7 @@ class mysql {
   package {
   ["mysql-server", "libapache2-mod-auth-mysql", "php5-mysql"]:
   ensure => "installed",
-  require => Exec['apt-get update']
+  require => Exec['apt-get upgrade']
   }
 
   service { "mysql":

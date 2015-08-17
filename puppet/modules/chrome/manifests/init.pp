@@ -3,6 +3,7 @@ class chromedriver {
   ensure => present,
   mode => "0755",
   source => "puppet:///modules/chrome/chromedriver.sh",
+  require => Exec["apt-get upgrade"]
   }
 
   exec { "install chromedriver":
@@ -14,7 +15,8 @@ class chrome {
   file {"/home/vagrant/chrome.sh":
   ensure => present,
   mode => "0755",
-  source => "puppet:///modules/chrome/chrome.sh"
+  source => "puppet:///modules/chrome/chrome.sh",
+  require => Exec["apt-get upgrade"]
   }
 
   exec {"install chrome":

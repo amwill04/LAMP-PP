@@ -6,6 +6,7 @@ class system-update {
   exec { 'apt-get upgrade':
   command => "sudo apt-get upgrade -y",
   require => Exec['apt-get update'],
+  timeout => 0
   }
 }
 
