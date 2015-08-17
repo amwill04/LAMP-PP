@@ -8,3 +8,5 @@ include chromedriver
 include mysql
 include python
 include git
+include phantomjs
+include install-phantomjs
