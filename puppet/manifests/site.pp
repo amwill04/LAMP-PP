@@ -10,3 +10,4 @@ include python
 include git
 include phantomjs
 include install-phantomjs
+include apache
