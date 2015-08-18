@@ -13,6 +13,7 @@ class php {
   file { "/etc/php5/apache2/php.ini":
   ensure => present,
   mode => "0755",
-  source => "puppet:///modules/php/php.ini"
+  source => "puppet:///modules/php/php.ini",
+  require => Package["apache2"]
   }
 }
