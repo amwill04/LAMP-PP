@@ -1,6 +1,12 @@
 class system-update {
+
+  exec {"apt-get":
+  command => "sudo apt-get -f install -y"
+  }
+
   exec { 'apt-get update':
     command => 'sudo apt-get update -y',
+    require => Exec["apt-get"]
   }
 
   exec { 'apt-get upgrade':

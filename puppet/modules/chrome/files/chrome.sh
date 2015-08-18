@@ -3,7 +3,6 @@
 if google-chrome --version
 then
   rm -f /home/vagrant/chrome.sh
-  echo chrome already installed
 else
   cd /tmp
   sudo apt-get install libxss1 libappindicator1 libindicator7 -y
